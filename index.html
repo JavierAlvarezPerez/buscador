@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buscador de Palabras</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador y Reemplazador</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Buscador de palabras</h1>
-    <textarea id="texto" placeholder="Escribe o pega tu texto aquí..."></textarea>
-    <input type="text" id="busqueda" placeholder="Palabras a buscar (usa comas)">
-    <button id="btnBuscar">Buscar</button>
+    <h1>Buscador y Reemplazador de Palabras</h1>
+
+    <textarea id="texto" placeholder="Escribe o pega aquí tu texto..."></textarea>
+
+    <div class="inputs">
+      <input id="busqueda" type="text" placeholder="Palabras a buscar (separadas por comas)">
+      <input id="reemplazo" type="text" placeholder="Nueva palabra (para reemplazar)">
+    </div>
+
+    <div class="buttons">
+      <button id="btnBuscar">Buscar</button>
+      <button id="btnReemplazar">Reemplazar</button>
+    </div>
+
     <p id="resultado"></p>
     <div id="textoResaltado"></div>
   </div>
 
-  <script src="bundle.js"></script>
+  <script src="./bundle.js"></script>
 </body>
 </html>
